@@ -40,7 +40,15 @@ const styles = StyleSheet.create({
     borderBottomColor: "#eee",
     paddingBottom: 10
   },
-  search: { borderBottomColor: "#333", borderBottomWidth: 1 },
+  search: {
+    borderBottomColor: "#333",
+    borderBottomWidth: 1,
+    paddingLeft: 10,
+
+    width: 240,
+    height: 35
+  },
+
   btn: {
     margin: 10,
     justifyContent: "center",
@@ -48,7 +56,8 @@ const styles = StyleSheet.create({
     backgroundColor: publicColors.BTN_COLOR,
     width: 50,
     height: 35,
-    borderRadius: 10
+    borderRadius: 10,
+    marginLeft: 20
   },
   txt: { color: "#fff" }
 });
