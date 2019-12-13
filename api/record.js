@@ -1,16 +1,30 @@
-// axios를 통해서 롤 전적 데이터를 가져오는 function을 만듬
-// API : RGAPI-8ada259d-a21f-4693-8331-fda167aa51f7
-// https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/Hide%20on%20bush?api_key=RGAPI-8ada259d-a21f-4693-8331-fda167aa51f7
-
-// axios의 설정을 준다.
-// 1)기본 URL : https://kr.api.riotgames.com/lol
-// 2) params설정
-
+// API : RGAPI-58e87385-93ea-481c-8e4a-233d04627c32
+// https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/korealol/?api_key=RGAPI-58e87385-93ea-481c-8e4a-233d04627c32
 import axios from "axios";
-// base URL :
-// const api = axois.create({baseURL : ,
-//     params : {api_key : , language :}});
 
-//     export const record = {
+// getLOLData =() =>{
+//     let summonerUrl, matchUrl, leagueUrl;
 
-//     }
+//     summonerUrl =`${apiDefault.url}/summoner/v4/summoners/by-name/${apiDefault.name}?api_key=${apiDefault.key}`;
+//     axios.get(summonerUrl).then(summonerData => {
+//         matchUrl = `${apiDefault.url}/match/v4/matches/${summonerData.data.accountId}?api_key=${apiDefault.key}`;
+//         axios.get(matchUrl)
+//         .then(matchData => {
+//             leagueUrl = `${apiDefault.url}/league/v4/entries/by-summoner/xWR5hML28HOT4LRDWHUY682hW-pDV2sNdEUB_0bnaDR0vw?api_key=${apidefault.key}`
+//         })
+
+var UserId = "Korealol";
+
+const api = axios.create({
+
+    baseURL: "https://kr.api.riotgames.com/lol/",
+    getAccountParams: "summoner/v4/summoners/by-name/",
+    api_key: "api_key=RGAPI-58e87385-93ea-481c-8e4a-233d04627c32"
+
+})
+
+getLOLData = () => {
+  let accountId;
+  accountId = 
+};
+
