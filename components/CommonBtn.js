@@ -22,6 +22,7 @@ class CommonBtn extends React.Component {
           <TouchableOpacity onPress={this.props.action} style={styles.btn}>
             <Text style={styles.txt}>검색</Text>
           </TouchableOpacity>
+          
         </View>
       </View>
     );
@@ -30,8 +31,10 @@ class CommonBtn extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
+    
     flexDirection: "row",
     justifyContent: "space-between",
+    
     alignItems: "center",
     borderBottomWidth: 1,
     borderBottomColor: "#eee",
